@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llano Suministro | Venta de Telas de Calidad</title>
+    <style>
+        /* Aquí iría tu CSS, o puedes enlazar un archivo externo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6a1a1a;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1500x600.png?text=Lugar+para+una+imagen+de+telas');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            flex-direction: column;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 20px;
+            margin-top: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #6a1a1a;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .categories, .products {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .category-grid, .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .category-item, .product-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .category-item img, .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#">Llano Suministro</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Telas</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Llano Suministro: Tu Creatividad, Nuestra Pasión</h1>
+        <p>Descubre la mejor selección de telas para cada uno de tus proyectos.</p>
+        <button onclick="location.href='#products'">Explora Nuestra Colección</button>
+    </section>
+
+    <section class="categories">
+        <h2>Encuentra la tela perfecta</h2>
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="https://via.placeholder.com/250x200.png?text=Algodon" alt="Telas de Algodón">
+                <h3>Algodón</h3>
+                <p>Suaves y transpirables, ideales para ropa y manualidades.</p>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/250x200.png?text=Lino" alt="Telas de Lino">
+                <h3>Lino</h3>
+                <p>Elegantes y versátiles para prendas de verano y decoración.</p>
+            </div>
+            <div class="category-item">
+                <img src="https://via.placeholder.com/250x200.png?text=Seda" alt="Telas de Seda">
+                <h3>Seda</h3>
+                <p>Lujosas y fluidas, perfectas para alta costura.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Nuestros productos destacados</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x250.png?text=Tela+1" alt="Tela de Algodón Estampado">
+                <h4>Algodón Estampado "Florecer"</h4>
+                <p>$12.50 / metro</p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x250.png?text=Tela+2" alt="Tela de Lino Natural">
+                <h4>Lino Natural "Tierra"</h4>
+                <p>$18.00 / metro</p>
+                <button>Añadir al Carrito</button>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x250.png?text=Tela+3" alt="Seda de Charmeuse">
+                <h4>Seda "Encanto"</h4>
+                <p>$35.00 / metro</p>
+                <button>Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Llano Suministro. Todos los derechos reservados.</p>
+            <p>Contáctanos: <a href="mailto:info@llanosuministro.com">info@llanosuministro.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
